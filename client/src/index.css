@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+.boxShadow {
+  border-radius: .375rem;
+  background: white;
+  box-shadow:  -4px -4px 6px rgba( 99, 91, 255, .1 ),
+                4px 4px 6px rgba( 99, 91, 255, .1 );
+}
+
+.underlineHover {
+  position: relative;
+  text-decoration: none;
+  color: #635BFF;
+  transition: color 1s;
+}
+
+.underlineHover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #635BFF;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.underlineHover:hover::before {
+  transform: scaleX(1);
+}
+
+.underlineActive {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+
+.underlineActive::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #635BFF;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.underlineActive::before {
+  transform: scaleX(1);
+}
+
+.underlined {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+
+.underlined::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 14px;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.underlined:hover::before {
+  transform: scaleX(0);
+}
+
+.backgroundGradient {
+  background: rgb(99,91,255);
+  background: linear-gradient(0deg, rgba(99,91,255,0.24693627450980393) 0%, rgba(99,91,255,0.0984768907563025) 49%, rgba(247,247,247,0) 100%);
+}
+
+.backgroundGradientNavbar {
+  background: rgb(99,91,255);
+  background: linear-gradient(156deg, rgba(99,91,255,0.3) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+}
+
+.backgroundGradientFooter {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0.15730042016806722) 0%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+}
