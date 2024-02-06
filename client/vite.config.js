@@ -8,4 +8,7 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src")}],
   },
+  define: {
+    __APP_ENV__: process.env.VITE_VERCEL_ENV,
+  }
 })
