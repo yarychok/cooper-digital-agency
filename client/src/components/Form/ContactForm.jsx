@@ -37,16 +37,6 @@ export const ContactForm = () => {
     const [phoneNumber, setPhoneNumber] = useState('')
     const [valid, setValid] = useState(true)
 
-    // const handlePhoneNumberChange = (value) => {
-    //     setPhoneNumber(value)
-    //     setValid(validatePhoneNumber(value))
-    // }
-
-    // const validatePhoneNumber = (phoneNumber) => {
-    //     const phoneNumberPattern = /^\d{10}$/
-    //     return phoneNumberPattern.test(phoneNumber)
-    // }
-
     // Phone number input styles
     const [isFocused, setIsFocused] = useState(false);
     const handlePhoneNumberFocus = () => setIsFocused(true)
@@ -54,7 +44,6 @@ export const ContactForm = () => {
 
     // Form context
     const { isFormVisible, setIsFormVisible } = useFormContext()
-
 
     // Form animation
     const animation = useAnimation()
@@ -85,9 +74,6 @@ export const ContactForm = () => {
     // Submit button animation
     const [isLoading, setIsLoading] = useState(false)
     const [isSuccess, setIsSuccess] = useState(false)
-
-    // Todo along with exit form animation
-    // const [isError, setIsError] = useState(false)
 
     // Form validation and submit handling
     const { control, handleSubmit, reset } = useForm({ 
@@ -121,7 +107,6 @@ export const ContactForm = () => {
         setIsLoading(true)
 
         axios
-            // .post( 'http://localhost:5000/send_email', data )
             .post(process.env.API_ENDPOINT, data)
             .then(() => {
                 setTimeout(() => {
@@ -135,19 +120,11 @@ export const ContactForm = () => {
                         confetti.stop()
                         toggleForm()
                     }, 3000)
-
-                    // reset(formValues => ({ 
-                    //     ...formValues,
-                    //     phone: '',
-                    // }))
                 }, 1000)
             })
             .catch(() => {
                 setIsError(true)
             })
-            // .finally(() => {
-                
-            // })
     }
 
     return (
