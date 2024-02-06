@@ -8,9 +8,7 @@ import { Footer } from '@/components/Footer'
 import { ContactForm } from '@/components/Form/ContactForm'
 import { Faq } from '@/components/Faq'
 import { FormProvider } from '@/components/Form/FormContext'
-
-import {projects} from '@/Components/Routes/projects'
-
+import { projects } from '@/Components/Routes/projects'
 import { useRef, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
