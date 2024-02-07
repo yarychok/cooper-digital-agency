@@ -103,7 +103,7 @@ export const ContactForm = () => {
         setIsLoading(true)
 
         axios
-            .post(import.meta.env.API_ENDPOINT, data)
+            .post(import.meta.env.VITE_API_ENDPOINT, data)
             .then(() => {
                 setTimeout(() => {
                     setIsSuccess(true)
@@ -119,7 +119,7 @@ export const ContactForm = () => {
                 }, 1000)
             })
             .catch(() => {
-                console.log(console.log("It was working in local env!"))
+                console.log(console.log(import.meta.env.VITE_API_ENDPOINT))
             })
     }
 
