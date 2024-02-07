@@ -7,7 +7,7 @@ import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { projects } from '../components/Routes/projects'
-import { ProjectCard } from '@/Components/Routes/ProjectCard'
+import { ProjectCard } from '../components/Routes/ProjectCard'
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 
