@@ -119,7 +119,7 @@ export const ContactForm = () => {
                 }, 1000)
             })
             .catch(() => {
-                console.log(console.log(import.meta.env.VITE_API_ENDPOINT))
+                console.log('Catched error.')
             })
     }
 
