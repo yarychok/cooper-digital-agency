@@ -1,15 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { confetti } from '@/animations/confetti'
-
 import axios from 'axios'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
-
 import { useForm, Controller } from 'react-hook-form'
 import { useFormContext } from '@/components/Form/FormContext'
-
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z, string } from 'zod'
 import PhoneInput from 'react-phone-input-2'

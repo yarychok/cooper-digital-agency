@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import hero from '@/assets/hero.svg'
-
 import { useFormContext } from '@/components/Form/FormContext'
-
 import { animate, motion, useAnimation } from 'framer-motion'
 
 export const Hero = () => {

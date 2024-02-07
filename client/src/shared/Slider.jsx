@@ -3,12 +3,9 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import { FreeMode, Pagination } from 'swiper/modules'
-
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { projects } from '@/Components/Routes/projects'
 import { ProjectCard } from '@/Components/Routes/ProjectCard'
 import { Link } from 'react-router-dom'

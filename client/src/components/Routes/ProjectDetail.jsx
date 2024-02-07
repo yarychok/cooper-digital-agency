@@ -1,13 +1,11 @@
 import {Footer} from '@/components/Footer'
 import logoNav from '@/assets/logoNav.svg'
-import { useEffect, useRef, useState } from 'react'
-
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import { projects } from '@/Components/Routes/projects'
+import { projects } from './projects'
 import { useFormContext } from '@/components/Form/FormContext'
 import ContactForm from '../Form/ContactForm'
-
-import { animate, motion, useAnimation } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 
 export const ProjectDetail = () => {
 

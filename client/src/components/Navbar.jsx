@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import logoNav from '@/assets/logoNav.svg'
 import { motion } from 'framer-motion'
 

@@ -1,7 +1,5 @@
 import { React, forwardRef } from 'react'
-
 import logoFooter from '@/assets/logoFooter.svg'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareXTwitter, faLinkedin, faMedium, faInstagram, faBehance, faFacebook } from '@fortawesome/free-brands-svg-icons'
 

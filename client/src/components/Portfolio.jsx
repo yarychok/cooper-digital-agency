@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 import { Link } from 'react-router-dom'
-
 import done from '@/assets/done.png'
 import { projects } from '@/Components/Routes/projects'
 import { ProjectCard } from './Routes/ProjectCard'

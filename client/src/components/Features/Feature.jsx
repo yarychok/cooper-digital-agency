@@ -1,5 +1,4 @@
 import FeatureCard from "./FeatureCard"
-
 import feature1 from '@/assets/feature1.png'
 import feature2 from '@/assets/feature2.png'
 import feature3 from '@/assets/feature3.png'
@@ -7,16 +6,13 @@ import feature4 from '@/assets/feature4.png'
 import feature5 from '@/assets/feature5.png'
 import feature6 from '@/assets/feature6.png'
 import { useRef } from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import { FreeMode, Pagination } from 'swiper/modules'
-
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Feature() {
 

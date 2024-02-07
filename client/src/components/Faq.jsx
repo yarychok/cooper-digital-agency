@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect, forwardRef } from 'react'
-
 import { Accordion } from '@/shared/Accordion'
 import { useAnimation, useInView, motion } from 'framer-motion';
 import { useFormContext } from '@/components/Form/FormContext'

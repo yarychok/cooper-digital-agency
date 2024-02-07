@@ -1,8 +1,6 @@
 import { motion, useInView, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react'
-
 import { Counter } from '@/shared/Counter'
-
 import process1 from '@/assets/process1.png'
 import process2 from '@/assets/process2.png'
 import process3 from '@/assets/process3.png'
