@@ -20,8 +20,7 @@ export default {
         }
       },
       animation: {
-        slide: 'slide 60s infinite linear',
-        xslide: 'slide 20s infinite linear'
+        slide: 'slide 20s infinite linear',
       },
       colors: {
         'blue-light': '#635BFF0D',
